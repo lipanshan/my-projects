@@ -1,0 +1,167 @@
+header {
+  background: #ffffff; }
+  header .title-wrap {
+    height: 84px;
+    background: url(../images/bird.png) no-repeat 0 0 #ffffff;
+    background-size: 152px 84px; }
+    header .title-wrap .back {
+      margin-top: 36px;
+      padding-right: 30px;
+      float: right;
+      font-size: 28px;
+      line-height: 48px;
+      color: #333333; }
+      header .title-wrap .back .txt {
+        margin-right: 20px;
+        float: left; }
+      header .title-wrap .back .icon {
+        margin-top: 10px;
+        float: left;
+        width: 14px;
+        height: 28px;
+        background: url(../images/arrow-right.png) no-repeat 0 0;
+        background-size: 14px 27px; }
+  header .avatar-wrap {
+    position: relative;
+    margin: 37px 30px 0;
+    padding-bottom: 41px;
+    background: url(../images/vipcenter-bg.jpg) no-repeat 0 0;
+    background-size: 100% 221px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    border-radius: 14px; }
+    header .avatar-wrap .img-wrap {
+      position: absolute;
+      top: -88px;
+      left: 50%;
+      padding: 4px;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 172px;
+      height: 172px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #bfa55d;
+      overflow: hidden; }
+      header .avatar-wrap .img-wrap > img {
+        width: 164px;
+        height: 164px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+    header .avatar-wrap > h1 {
+      padding-top: 90px;
+      font-size: 34px;
+      line-height: 64px;
+      text-align: center;
+      color: #333333;
+      white-space: nowrap;
+      font-weight: 400;
+      overflow: hidden; }
+    header .avatar-wrap .subtitle {
+      padding-bottom: 21px;
+      font-size: 0;
+      text-align: center;
+      white-space: nowrap; }
+      header .avatar-wrap .subtitle > h2 {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 23px;
+        font-size: 26px;
+        line-height: 44px;
+        -webkit-border-radius: 23px;
+        -moz-border-radius: 23px;
+        border-radius: 23px;
+        text-align: center;
+        border: 1px solid #bfa55d; }
+
+.content {
+  margin-top: 20px;
+  background: #ffffff; }
+  .content .title {
+    margin: 26px auto 0;
+    width: 360px;
+    height: 45px;
+    background: url(../images/vipcente-title.png) no-repeat 0 0;
+    background-size: 360px 45px; }
+  .content .card-list {
+    margin-top: 8px;
+    margin-right: -49px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 0; }
+    .content .card-list .item {
+      margin-right: 20px;
+      margin-top: 20px;
+      padding-top: 48px;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 218px;
+      background-color: #f8f6ee;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      border-radius: 8px; }
+      .content .card-list .item:nth-child(1) .icon-wrap {
+        background: url(../images/vipcente-icon1.png) no-repeat 0 0;
+        background-size: 62px 62px; }
+      .content .card-list .item:nth-child(1) .tilt-icon {
+        background: url(../images/vipcente-icon11.png) no-repeat 0 0;
+        background-size: 84px 75px; }
+      .content .card-list .item:nth-child(2) .icon-wrap {
+        background: url(../images/vipcente-icon2.png) no-repeat 0 0;
+        background-size: 62px 62px; }
+      .content .card-list .item:nth-child(2) .tilt-icon {
+        background: url(../images/vipcente-icon22.png) no-repeat 0 0;
+        background-size: 84px 75px; }
+      .content .card-list .item:nth-child(3) .icon-wrap {
+        background: url(../images/vipcente-icon3.png) no-repeat 0 0;
+        background-size: 62px 62px; }
+      .content .card-list .item:nth-child(3) .tilt-icon {
+        background: url(../images/vipcente-icon33.png) no-repeat 0 0;
+        background-size: 84px 75px; }
+      .content .card-list .item:nth-child(4) .icon-wrap {
+        background: url(../images/vipcente-icon4.png) no-repeat 0 0;
+        background-size: 62px 62px; }
+      .content .card-list .item:nth-child(4) .tilt-icon {
+        background: url(../images/vipcente-icon44.png) no-repeat 0 0;
+        background-size: 84px 75px; }
+      .content .card-list .item:nth-child(5) .icon-wrap {
+        background: url(../images/vipcente-icon5.png) no-repeat 0 0;
+        background-size: 62px 62px; }
+      .content .card-list .item:nth-child(5) .tilt-icon {
+        background: url(../images/vipcente-icon55.png) no-repeat 0 0;
+        background-size: 84px 75px; }
+      .content .card-list .item .icon-wrap {
+        margin: auto;
+        width: 62px;
+        height: 62px; }
+      .content .card-list .item .price, .content .card-list .item > h3 {
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+        font-weight: 400; }
+      .content .card-list .item .price {
+        color: #cc3636; }
+        .content .card-list .item .price .price-icon {
+          font-size: 20px; }
+      .content .card-list .item > h3 {
+        padding-bottom: 22px;
+        color: #666666; }
+      .content .card-list .item .tilt-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 84px;
+        height: 75px;
+        z-index: 10; }
+
+/*# sourceMappingURL=vipcenter.css.map */

@@ -1,0 +1,47 @@
+html {
+  background: url(../images/intro_bg.png) no-repeat 0 0;
+  background-size: 100% 2158px; }
+
+body {
+  overflow-x: hidden; }
+
+.activty-intro .content {
+  position: relative; }
+  .activty-intro .content .img-wrap {
+    margin: 34px auto 0;
+    width: 260px;
+    height: 233px;
+    border: 8px solid #f5d725;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden; }
+    .activty-intro .content .img-wrap > img {
+      display: block;
+      width: 260px;
+      height: 233px; }
+  .activty-intro .content .name-wrap {
+    margin-top: 8px;
+    font-size: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffe146; }
+    .activty-intro .content .name-wrap .txt {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 22px;
+      font-size: 36px;
+      line-height: 76px;
+      font-weight: 800; }
+    .activty-intro .content .name-wrap > h1 {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 28px;
+      padding-right: 40px;
+      font-size: 56px;
+      line-height: 106px;
+      font-weight: 800; }
+  .activty-intro .content .title-wrap {
+    position: relative; }
+
+/*# sourceMappingURL=introduction.css.map */

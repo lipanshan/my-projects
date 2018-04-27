@@ -1,0 +1,137 @@
+html,body {
+    background-color: #9421ff;
+}
+.vote-header {
+    position: relative;
+    width: 100%;
+    height: 117px;
+    z-index: 1;
+    background: url("./images/vote_topBar.png") no-repeat;
+}
+.vote-main {
+    position: absolute;
+    top: 0;
+
+}
+.vote-header {
+    width: 100%;
+    font-size: 40px;
+    color: #ccc;
+    line-height: 102px;
+}
+.vote-header .vote-header-tab {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.vote-header .vote-header-tab:before {
+    content: " ";
+    display: block;
+    height: 33px;
+    width: 4px;
+    background-color: #fbd80c;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 40px;
+}
+.vote-header .vote-header-tab.active {
+    color: #fbd80c;
+}
+.shearch {
+    width: 70%;
+    height: 80px;
+    margin-left:15%;
+    border-radius: 25px;
+    z-index: 9;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+
+}
+.shearch input {
+    font-size: 34px;
+    width: 100%;
+    height: 100%;
+    padding-left: 116px;
+    background-color: #fff;
+    opacity: .6;
+    color: #ccc;
+}
+.shearch input::placeholder {
+    color: #999;
+}
+.icon-search {
+    position: absolute;
+    left: 56px;
+    top: 20px;
+    width: 42px;
+    height: 42px;
+    background: url("./images/search.png") no-repeat;
+}
+.vote-main {
+    position: relative;
+    width: 92%;
+    height:auto;
+    left: 4%;
+}
+.vote-main .vote-item {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 100%;
+    height: 322px;
+    background-color: rgba(255,255,255,.3);
+}
+.vote-item-img {
+    position: absolute;
+    left: 28px;
+    top: 26px;
+    width: 300px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: #f5d725;
+}
+.vote-item-img img {
+    width: 292px;
+    height: 262px;
+    margin-left: 4px;
+    margin-top: 4px;
+    border-radius:20px;
+}
+.vote-item-text {
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    color: #fff;
+}
+.vote-item-text .item-text1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.vote-item-text .item-text2,
+.vote-item-text .item-text3 {
+    margin-top: 5px;
+    font-size: 30px;
+}
+.vote-item-text .item-text3 span {
+    color: #c80064;
+}
+.vote-item-text .votebtn {
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f5d725;
+    text-align: center;
+    color: #ff66aa;
+    font-size: 30px;
+    line-height:60px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.vote-item-text .votebtn.active {
+    background-color: #bdbdbd!important;
+    color: #666!important;
+}

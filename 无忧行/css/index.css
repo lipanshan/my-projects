@@ -1,0 +1,313 @@
+
+#page1 {
+    position: relative;
+    background: url("../images/ip6bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.page1-foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 107px;
+    z-index: 99;
+    background: url("../images/page1_foot.png") no-repeat;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.happy-title {
+    position: absolute;
+    top: 20px;
+    left: 53px;
+}
+.happy-title img {
+    display: block;
+    width: 272px;
+    height: 88px;
+}
+.happy-buy {
+    font-size: 40px;
+    color: #ffea00;
+    font-weight: 700;
+}
+.happy-btn {
+    width: 220px;
+    height: 55px;
+    background-color: #ffea00;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #c218fa;
+    font-weight: 700;
+}
+.icon-purplearrow {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url("../images/purple_arrow.png") no-repeat;
+}
+.comein {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.go {
+    position: absolute;
+    bottom: 175px;
+    left: 204px;
+
+}
+.go .go-title1 {
+    font-weight: bold;
+    font-size: 61px;
+    color: #c218fa;
+}
+.go .go-title2 {
+    font-size: 50px;
+    color: #c218fa;
+    font-weight: 600;
+    line-height: 1;
+}
+.all-go {
+    height: 54px;
+    width: 222px;
+    background-color: #c218fa;
+    color: #ffea00;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 48px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.icon-yellowarrow {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url("../images/yellow_arrow.png") no-repeat;
+}
+.all-gotext {
+    display: inline-block;
+    vertical-align: middle;
+}
+.discounts {
+    margin-top: 15px;
+}
+.icon-whitearrow {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    display: block;
+    width: 29px;
+    height: 16px;
+    margin-top: 10px;
+    vertical-align: middle;
+    background: url("../images/white.png") no-repeat;
+}
+
+
+#page2 {
+    background: url("../images/page2_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.top-text {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.icon-return {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    display: block;
+    width: 29px;
+    height: 16px;
+    margin-top: 10px;
+    vertical-align: middle;
+    background: url("../images/return.png") no-repeat;
+}
+
+.page2-list {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+}
+.list-item-left {
+    position: relative;
+    width: 614px;
+    height: 314px;
+    margin-left: 80px;
+}
+.list-item-left .img-box {
+    position: absolute;
+    left: 0;
+    width: 314px;
+    height: 314px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #efda3f;
+    z-index: 99;
+}
+.list-item-left .img-box img {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    display: block;
+    width: 284px;
+    height: 284px;
+}
+.list-item-left .text-box {
+    height: 230px;
+    width: 400px;
+    position: absolute;
+    right:0;
+    border-radius: 20px;
+    margin-top: 42px;
+    background-color: rgba(255,255,255,.3);
+}
+.list-item-left .text-box p {
+    line-height: 1;
+}
+.list-item-left .text-box .text1 {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    font-size: 27px;
+    color: #f5d725;
+    letter-spacing: 2px;
+}
+.list-item-left .text-box .text2 {
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    font-size: 27px;
+    color: #f5d725;
+    letter-spacing: 2px;
+}
+.list-item-left .text-box .text3 {
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    font-size: 44px;
+    color: #f5d725;
+    font-weight: 700;
+}
+.list-item-left .text-box .text3 span{
+    font-size: 25px;
+}
+
+.page2-btn p {
+    line-height: 55px!important;
+}
+.list-item-left .text-box .page2-btn{
+    bottom: 20px;
+    left: 140px;
+}
+.list-item-right {
+    position: relative;
+    width: 92%;
+    height: 360px;
+    margin: 50px auto 0;
+}
+.list-item-right .img-box {
+    position: absolute;
+    right: 0;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #efda3f;
+    z-index: 99;
+}
+.list-item-right .img-box img {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: block;
+    width: 330px;
+    height: 330px;
+}
+.list-item-right .text-box {
+    height: 288px;
+    width: 500px;
+    position: absolute;
+    left:0;
+    border-radius: 20px;
+    margin-top: 45px;
+    background-color: rgba(255,255,255,.3);
+}
+.list-item-right .text-box p {
+    color: #efda3f;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-left: 20px;
+}
+.list-item-right .text-box p:first-child {
+    margin-top: 50px;
+}
+.page2-btn {
+    position: absolute;
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f5d725;
+    text-align: center;
+    color: #fa5578;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.list-item-right .text-box .page2-btn p {
+    color: #fa5578!important;
+    margin: 0!important;
+    font-size: 30px;
+    font-weight: 700;
+}
+.list-item-right .text-box .page2-btn {
+    margin-top: 20px;
+    margin-left: 34px;
+}
+.pink-arrow {
+    display: inline-block;
+    width: 18px;
+    height: 28px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url("../images/pink_arrow.png") no-repeat;
+}
+.page2-btn p {
+    display: inline-block;
+}
+.icon-whitearrow,
+.icon-return {
+    animation: myfirst 1s infinite;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

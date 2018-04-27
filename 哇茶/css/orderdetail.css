@@ -1,0 +1,194 @@
+body {
+  background-color: #f5f5f5; }
+
+.order-detail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 100px;
+  left: 0;
+  z-index: 10;
+  overflow: hidden; }
+  .order-detail .content > header {
+    margin-top: 19px; }
+    .order-detail .content > header .box {
+      background: #ffffff; }
+      .order-detail .content > header .box .row1, .order-detail .content > header .box .row2 {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-between;
+        background-color: #ffffff; }
+        .order-detail .content > header .box .row1 .time, .order-detail .content > header .box .row2 .time {
+          -webkit-flex: 1;
+          -moz-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          font-size: 28px;
+          line-height: 74px;
+          padding-top: 6px;
+          border-bottom: 1px solid #eeeeee;
+          color: #666666; }
+        .order-detail .content > header .box .row1 .status, .order-detail .content > header .box .row2 .status {
+          position: relative;
+          -webkit-flex: 1;
+          -moz-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          font-size: 28px;
+          line-height: 74px;
+          padding-top: 6px;
+          border-bottom: 1px solid #eeeeee;
+          text-align: right; }
+          .order-detail .content > header .box .row1 .status .point, .order-detail .content > header .box .row2 .status .point {
+            position: absolute;
+            top: 21px;
+            right: -14px;
+            width: 16px;
+            height: 16px;
+            background: #cc3636;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%; }
+      .order-detail .content > header .box .row2 {
+        margin-top: 0; }
+        .order-detail .content > header .box .row2 .time {
+          -webkit-flex: 1;
+          -moz-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          white-space: nowrap;
+          border: none; }
+          .order-detail .content > header .box .row2 .time .name {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 230px;
+            font-size: 36px;
+            line-height: 106px;
+            color: #333333;
+            font-weight: 600;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+          .order-detail .content > header .box .row2 .time .address {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 36px;
+            line-height: 106px;
+            color: #333333;
+            font-weight: 600; }
+        .order-detail .content > header .box .row2 .price {
+          -webkit-flex: 0 0 120px;
+          -moz-flex: 0 0 120px;
+          -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+          font-size: 36px;
+          line-height: 106px;
+          text-align: right;
+          font-weight: 600;
+          border: none; }
+          .order-detail .content > header .box .row2 .price .money-icon {
+            font-size: 20px; }
+    .order-detail .content > header.order-status1 .box .row1 .status {
+      color: #2e83eb; }
+    .order-detail .content > header.order-status1 .box .row2 .price {
+      color: #cc3636; }
+    .order-detail .content > header.order-status2 .box .row1 .status {
+      color: #14b41f; }
+    .order-detail .content > header.order-status2 .box .row2 .price {
+      color: #cc3636; }
+    .order-detail .content > header.order-status3 .box .row1 .status {
+      color: #666666; }
+  .order-detail .qrcode-wrap {
+    margin-top: 50px;
+    padding-bottom: 41px; }
+    .order-detail .qrcode-wrap .img-wrap {
+      margin: auto;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+      .order-detail .qrcode-wrap .img-wrap > .icon {
+        position: absolute;
+        top: -39px;
+        right: -58px;
+        width: 135px;
+        height: 136px;
+        z-index: 10; }
+      .order-detail .qrcode-wrap .img-wrap > .qrcode {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        overflow: hidden; }
+    .order-detail .qrcode-wrap > h2 {
+      margin-top: 21px; }
+    .order-detail .qrcode-wrap > h2, .order-detail .qrcode-wrap > p {
+      font-size: 28px;
+      line-height: 48px;
+      text-align: center;
+      color: #333333; }
+      .order-detail .qrcode-wrap > h2.time, .order-detail .qrcode-wrap > p.time {
+        margin-left: 20px; }
+  .order-detail .order-info {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 11px;
+    background-color: #ffffff; }
+    .order-detail .order-info .title {
+      padding-top: 3px;
+      font-size: 28px;
+      line-height: 72px;
+      color: #666666; }
+    .order-detail .order-info .wrap {
+      padding-top: 19px;
+      padding-bottom: 18px;
+      border-top: 1px solid #eeeeee; }
+      .order-detail .order-info .wrap > p {
+        font-size: 28px;
+        line-height: 48px;
+        color: #333333; }
+        .order-detail .order-info .wrap > p .price {
+          color: #cc3636; }
+          .order-detail .order-info .wrap > p .price.finish {
+            color: #333333; }
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex; }
+  footer .left, footer .right, footer .center {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 34px;
+    line-height: 100px;
+    text-align: center; }
+  footer .left {
+    color: #333333;
+    border: 1px solid #eeeeee;
+    background: #ffffff; }
+  footer .right, footer .center {
+    background: #bfa55d;
+    color: #ffffff; }
+
+/*# sourceMappingURL=orderdetail.css.map */

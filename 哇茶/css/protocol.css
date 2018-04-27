@@ -1,0 +1,23 @@
+body {
+  background-color: #f5f5f5; }
+  body .protocol {
+    background-color: #ffffff; }
+    body .protocol > header {
+      height: 85px;
+      margin-bottom: 13px;
+      background: url(../images/protocol-header.png) no-repeat 0 0 #ffffff;
+      background-size: 100% 85px; }
+    body .protocol .content {
+      padding: 0 72px 18px 69px;
+      overflow: hidden; }
+      body .protocol .content > h1 {
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 48px;
+        color: #bfa55d; }
+      body .protocol .content > p {
+        font-size: 26px;
+        line-height: 46px;
+        color: #333333; }
+
+/*# sourceMappingURL=protocol.css.map */

@@ -1,0 +1,199 @@
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border-bottom-line::after {
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    -ms-transform: scaleY(0.7);
+    transform: scaleY(0.7); } }
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border-bottom-line::after {
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5); } }
+.rank {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: url(../images/bg1.png) no-repeat center center #ee6d1a;
+  background-size: 100% 100%; }
+  .rank > header {
+    margin: 47px 30px 0 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between; }
+    .rank > header .title {
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .rank > header .title > h1 {
+        width: 271px;
+        height: 138px;
+        background: url(../images/ranking-txt.png) no-repeat 0 0;
+        font-size: 0;
+        overflow: hidden; }
+    .rank > header .button-group {
+      margin-top: 42px;
+      padding-left: 24px;
+      padding-right: 24px;
+      border: 2px solid #fff;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      border-radius: 12px; }
+      .rank > header .button-group > h2 {
+        margin-top: 27px;
+        width: 183px;
+        height: 47px;
+        background: url(../images/button-txt.png) no-repeat 0 0;
+        font-size: 0;
+        overflow: hidden; }
+  .rank .content {
+    position: absolute;
+    top: 243px;
+    right: 30px;
+    bottom: 19px;
+    left: 30px;
+    z-index: 1;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+    .rank .content .head {
+      position: relative;
+      margin: 31px 30px 0 30px;
+      padding-bottom: 38px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between; }
+      .rank .content .head::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        border-bottom: 1px solid #e5e5e5; }
+      .rank .content .head > .rank-title:nth-child(1) {
+        -webkit-flex: 0 0 104px;
+        -moz-flex: 0 0 104px;
+        -ms-flex: 0 0 104px;
+        flex: 0 0 104px;
+        background: url(../images/ranking-list-txt1.png) no-repeat left center; }
+      .rank .content .head > .rank-title:nth-child(2) {
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: url(../images/ranking-list-txt2.png) no-repeat 66px center; }
+      .rank .content .head > .rank-title:nth-child(3) {
+        -webkit-flex: 0 0 124px;
+        -moz-flex: 0 0 124px;
+        -ms-flex: 0 0 124px;
+        flex: 0 0 124px;
+        background: url(../images/ranking-list-txt3.png) no-repeat right center; }
+      .rank .content .head .rank-title {
+        font-size: 0;
+        overflow: hidden;
+        height: 56px; }
+    .rank .content .list-container {
+      position: absolute;
+      top: 125px;
+      right: 30px;
+      bottom: 0;
+      left: 30px;
+      overflow: hidden; }
+      .rank .content .list-container .item {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        padding: 30px 0; }
+        .rank .content .list-container .item.border-bottom-line {
+          position: relative; }
+          .rank .content .list-container .item.border-bottom-line:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 0;
+            border-bottom: 1px solid #e5e5e5; }
+        .rank .content .list-container .item:nth-child(1) > h2, .rank .content .list-container .item:nth-child(2) > h2, .rank .content .list-container .item:nth-child(3) > h2 {
+          color: #f36713; }
+        .rank .content .list-container .item .name {
+          -webkit-flex: 1;
+          -moz-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          font-size: 0;
+          white-space: nowrap;
+          overflow: hidden; }
+          .rank .content .list-container .item .name > a {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 66px;
+            width: 80px;
+            height: 80px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #f36713; }
+            .rank .content .list-container .item .name > a > img {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 80px;
+              height: 80px; }
+          .rank .content .list-container .item .name > h2 {
+            margin-left: 22px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 26px;
+            line-height: 72px;
+            color: #000000;
+            white-space: nowrap;
+            overflow: hidden; }
+        .rank .content .list-container .item > h2 {
+          -webkit-flex: 0 0 104px;
+          -moz-flex: 0 0 104px;
+          -ms-flex: 0 0 104px;
+          flex: 0 0 104px;
+          font-size: 30px;
+          line-height: 80px;
+          text-align: center;
+          color: #000000; }
+        .rank .content .list-container .item .time {
+          -webkit-flex: 0 0 124px;
+          -moz-flex: 0 0 124px;
+          -ms-flex: 0 0 124px;
+          flex: 0 0 124px;
+          font-size: 22px;
+          line-height: 80px;
+          text-align: center;
+          color: #f36713; }
+
+/*# sourceMappingURL=ranking.css.map */

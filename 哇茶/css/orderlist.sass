@@ -1,0 +1,240 @@
+$color666: #666666
+$colorbfa: #bfa55d
+$colorfff: #ffffff
+$color333: #333333
+$colorcc3: #cc3636
+$colorf5f: #f5f5f5
+$coloreee: #eeeeee
+$color2e8: #2e83eb
+$color14b: #14b41f
+body
+  background-color: $colorf5f
+.menu
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: flex
+  padding-top: 2px
+  -webkit-justify-content: space-around
+  -moz-justify-content: space-around
+  -ms-justify-content: space-around
+  justify-content: space-around
+  background-color: $colorfff
+  .item
+    -webkit-flex: 1
+    -moz-flex: 1
+    -ms-flex: 1
+    flex: 1
+    background: url(../images/short-line.png) no-repeat right 36px
+    background-size: 1px 24px
+    text-align: center
+    &:last-child
+      background: none
+    &>a
+      position: relative
+      display: inline-block
+      vertical-align: top
+      font-size: 30px
+      line-height: 50px
+      padding: 22px 0
+      text-align: center
+      border-bottom: 4px solid transparent
+      color: $color666
+      .point
+        position: absolute
+        top: 21px
+        right: -14px
+        width: 16px
+        height: 16px
+        background: $colorcc3
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        -ms-border-radius: 50%
+        border-radius: 50%
+      &:hover,&.active
+        color: $colorbfa
+        border-color: $colorbfa
+
+.order-wrap
+  position: absolute
+  top: 100px
+  right: 0
+  bottom: 100px
+  left: 0
+  overflow: hidden
+  .item
+    position: relative
+    margin-top: 20px
+    -webkit-transition: all 0.4s
+    -moz-transition: all 0.4s
+    -ms-transition: all 0.4s
+    transition: all 0.4s
+    .box
+      position: relative
+      z-index: 20
+      background: $colorfff
+      -webkit-transition: all 0.4s
+      -moz-transition: all 0.4s
+      -ms-transition: all 0.4s
+      transition: all 0.4s
+      .row1,.row2
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: flex
+        padding-left: 30px
+        padding-right: 30px
+        justify-content: space-between
+        background-color: $colorfff
+        .time
+          -webkit-flex: 1
+          -moz-flex: 1
+          -ms-flex: 1
+          flex: 1
+          font-size: 28px
+          line-height: 74px
+          padding-top: 6px
+          border-bottom: 1px solid $coloreee
+          color: $color666
+        .status
+          position: relative
+          -webkit-flex: 1
+          -moz-flex: 1
+          -ms-flex: 1
+          flex: 1
+          font-size: 28px
+          line-height: 74px
+          padding-top: 6px
+          border-bottom: 1px solid $coloreee
+          text-align: right
+          .point
+            position: absolute
+            top: 21px
+            right: -14px
+            width: 16px
+            height: 16px
+            background: $colorcc3
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            -ms-border-radius: 50%
+            border-radius: 50%
+      .row2
+        margin-top: 0
+        .time
+          -webkit-flex: 1
+          -moz-flex: 1
+          -ms-flex: 1
+          flex: 1
+          white-space: nowrap
+          border: none
+          .name
+            display: inline-block
+            vertical-align: top
+            max-width: 230px
+            font-size: 36px
+            line-height: 106px
+            color: $color333
+            font-weight: 600
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
+          .address
+            display: inline-block
+            vertical-align: top
+            font-size: 36px
+            line-height: 106px
+            color: $color333
+            font-weight: 600
+        .price
+          -webkit-flex: 0 0 120px
+          -moz-flex: 0 0 120px
+          -ms-flex: 0 0 120px
+          flex: 0 0 120px
+          font-size: 36px
+          line-height: 106px
+          text-align: right
+          font-weight: 600
+          border: none
+          .money-icon
+            font-size: 20px
+    &.order-status1
+      .box
+        .row1
+          .status
+            color: $color2e8
+        .row2
+          .price
+            color: $colorcc3
+    &.order-status2
+      .box
+        .row1
+          .status
+            color: $color14b
+        .row2
+          .price
+            color: $colorcc3
+    &.order-status3
+      .box
+        .row1
+          .status
+            color: $color666
+    &.move-hook
+      .box
+        -webkit-transform: translateX(-140px)
+        -moz-transform: translateX(-140px)
+        -ms-transform: translateX(-140px)
+        transform: translateX(-140px)
+    .delete
+      position: absolute
+      top: 1px
+      right: 1px
+      bottom: 1px
+      width: 140px
+      font-size: 34px
+      line-height: 186px
+      color: $colorfff
+      text-align: center
+      background: $colorcc3
+      z-index: 1
+footer
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: flex
+  z-index: 10
+  padding-top: 14px
+  background-color: #ffffff
+  border-top: 1px solid #eeeeee
+  .menu-item
+    -webkit-flex: 1
+    -moz-flex: 1
+    -ms-flex: 1
+    flex: 1
+    &:nth-child(1)
+      background: url(../images/menu-icon1.png) no-repeat center 0
+    &:nth-child(2)
+      background: url(../images/menu-icon2.png) no-repeat center 0
+    &:nth-child(3)
+      background: url(../images/menu-icon3.png) no-repeat center 0
+    &:hover
+      .txt
+        color: #bfa55d
+      &:nth-child(1)
+        background: url(../images/menu-hover-icon1.png) no-repeat center 0
+      &:nth-child(2)
+        background: url(../images/menu-hover-icon2.png) no-repeat center 0
+      &:nth-child(3)
+        background: url(../images/menu-hover-icon3.png) no-repeat center 0
+    &>.icon
+      display: block
+      height: 41px
+      background-size: 41px 41px
+    &>.txt
+      font-size: 24px
+      line-height: 40px
+      color: #000000
+      text-align: center

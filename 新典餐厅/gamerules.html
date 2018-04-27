@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新典餐厅</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/share.css">
+    <script src="./js/v.js"></script>
+</head>
+<body>
+<section id="rulesWrap" class="rules">
+    <div class="content">
+        <div class="rules-info">
+            <div class="rule-title">
+                <div class="line"></div>
+                <h1></h1>
+                <div class="line"></div>
+            </div>
+            <div class="rule-content">
+                <div class="section1">
+                    <p>听音乐&nbsp;猜食材产地</p>
+                    <p><strong>每天</strong>用时最短的前三名</p>
+                    <p>新典餐厅</p>
+                    <p>10道菜双人晚餐</p>
+                    <p>凯宾买单</p>
+                </div>
+                <div class="section2">
+                    <p>排行榜每日0:00归零</p>
+                    <p>活动时间：2018年x年x月&nbsp;-&nbsp;2018年x年x月0点</p>
+                    <p class="italic">请发送截图至 <strong>“北京燕莎中心饭店”</strong>微信公众号领奖</p>
+                </div>
+                <div class="section1">
+                    <p>Listen to the music</p>
+                    <p>Guess where the food comes from</p>
+                    <p>The fastest will have</p>
+                    <p>10-course dinner for TWO at Signature's</p>
+                    <p>ON THE HOUSE!</p>
+                </div>
+                <div class="section2">
+                    <p>Ranking will be updated daily</p>
+                    <p>From x/x/2018 to x/x/2018</p>
+                    <p class="italic">Contact Wechat account: <strong>Kempinski_Beijing</strong>to</p>
+                    <p>collect the prize</p>
+                </div>
+            </div>
+        </div>
+        <div id="close" class="close"></div>
+    </div>
+    <div class="mask"></div>
+</section>
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/jquery.fullPage/jquery.fullPage.js"></script>
+<script>
+    $(function (){
+        $('#close').on('click', function (){
+            $('#rulesWrap').hide(0);
+        });
+    })
+</script>
+</body>
+</html>

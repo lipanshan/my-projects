@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哇茶</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/buycard.css">
+    <link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" href="./js/swiper-4.2.2/css/swiper.min.css">
+    <script src="./js/v.js"></script>
+</head>
+<body>
+<section class="buy-card">
+    <div class="top">
+        <div class="slider swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="./images/vipcard1.jpg" alt="图片"></li>
+                <li class="swiper-slide"><img src="./images/vipcard2.jpg" alt="图片"></li>
+                <li class="swiper-slide"><img src="./images/vipcard3.jpg" alt="图片"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="h1">
+            <span id="vipTType" class="txt">普通会员：</span>
+            <span class="price"><span class="price-icon">￥</span><span id="vipPirce">1000</span> </span>
+        </div>
+    </div>
+    <div class="center">
+        <h2></h2>
+        <ul class="list">
+            <li class="item"><span class="icon"></span><span class="txt">获得1000积分，可抵扣预约费用。</span></li>
+            <li class="item"><span class="icon"></span><span class="txt">茶山游享受9折优惠。购物先手9折优惠</span></li>
+            <li class="item"><span class="icon"></span><span class="txt">免费培训初级茶艺师证书，包教包会！</span></li>
+            <li class="item"><span class="icon"></span><span class="txt">一茶一世界，一叶一菩提。茶，人在草木之间。格调。</span></li>
+            <li class="item"><span class="icon"></span><span class="txt">茶山游享受9折优惠。购物先手9折优惠</span></li>
+        </ul>
+    </div>
+    <div class="active">立即购买</div>
+</section>
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/jquery.fullPage/jquery.fullPage.js"></script>
+<script src="./js/swiper-4.2.2/js/swiper.min.js"></script>
+<script>
+    var vipType = [
+        {
+            title: '普通会员',
+            price: 1000
+        },
+        {
+            title: '银卡会员',
+            price: 2000
+        },
+        {
+            title: '金卡会员',
+            price: 5000
+        }
+    ];
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        on:{
+            slideChange: function(){
+                var ind = $('.swiper-pagination-bullet').index($('.swiper-pagination-bullet-active'));
+                $('#vipTType').text(vipType[ind].title);
+                $('#vipPirce').text(vipType[ind].price);
+            },
+        },
+    });
+</script>
+</body>
+</html>

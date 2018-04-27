@@ -1,0 +1,182 @@
+.user-info
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 100px
+  left: 0
+  z-index: 10
+  background-color: #f5f5f5
+  overflow: auto
+  &>header
+    position: relative
+    height: 480px
+    background: url(../images/user-header.jpg) no-repeat 0 0
+    background-size: 100% 480px
+    .back-wrap
+      position: absolute
+      top: 36px
+      right: 0
+      width: 175px
+      font-size: 0
+      .back-txt
+        margin-right: 21px
+        display: inline-block
+        vertical-align: top
+        font-size: 26px
+        line-height: 46px
+        color: #333333
+      .back-icon
+        display: inline-block
+        vertical-align: top
+        margin-top: 10px
+        width: 14px
+        height: 26px
+        overflow: hidden
+        background: url(../images/arrow-right.png) no-repeat 0 0
+        background-size: 14px 27px
+    .cnt
+      position: absolute
+      top: 50%
+      right: 0
+      left: 0
+      transform: translate3d(0, -50%, 0)
+      .avatar-wrap
+        margin: auto
+        width: 208px
+        height: 208px
+        padding: 6px
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        -ms-border-radius: 50%
+        border-radius: 50%
+        border: 1px solid #c4ac6a
+        &>img
+          display: block
+          width: 196px
+          height: 196px
+          -webkit-border-radius: 50%
+          -moz-border-radius: 50%
+          -ms-border-radius: 50%
+          border-radius: 50%
+          overflow: hidden
+      &>h1
+        margin-top: 3px
+        font-size: 34px
+        line-height: 64px
+        text-align: center
+        color: #333333
+        font-weight: 500
+      &>p
+        font-size: 0
+        text-align: center
+        &>span
+          display: inline-block
+          vertical-align: top
+          font-size: 26px
+          line-height: 44px
+          padding: 0 22px
+          text-align: center
+          -webkit-border-radius: 46px
+          -moz-border-radius: 46px
+          -ms-border-radius: 46px
+          border-radius: 44px
+          border: 1px solid #999999
+          color: #666666
+
+  .content
+    margin-top: 22px
+    background-color: #ffffff
+    &>ul
+      padding: 3px 30px
+    .item
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #eeeeee
+      white-space: nowrap
+      &:last-child
+        border: none
+      &:nth-child(1)
+        .icon
+          background: url(../images/item-icon1.png) no-repeat 0 0
+      &:nth-child(2)
+        .icon
+          background: url(../images/item-icon2.png) no-repeat 0 0
+      .left
+        -webkit-flex: 1
+        -moz-flex: 1
+        -ms-flex: 1
+        flex: 1
+        overflow: hidden
+        font-size: 0
+        &>.icon
+          margin: 39px 30px 0 30px
+          display: inline-block
+          vertical-align: top
+          width: 39px
+          height: 38px
+          background-size: 39px 38px
+        .txt
+          margin-right: 30px
+          display: inline-block
+          vertical-align: top
+          font-size: 30px
+          line-height: 108px
+          padding-bottom: 2px
+          color: #333333
+          overflow: hidden
+      .right
+        margin-top: 44px
+        -webkit-flex: 0 0 14px
+        -moz-flex: 0 0 14px
+        -ms-flex: 0 0 14px
+        flex: 0 0 14px
+        width: 14px
+        height: 26px
+        background: url(../images/arrow-right.png) no-repeat 0 0
+        background-size: 14px 26px
+  &>footer
+    position: fixed
+    right: 0
+    bottom: 0
+    left: 0
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: flex
+    z-index: 10
+    padding-top: 14px
+    background-color: #ffffff
+    border-top: 1px solid #eeeeee
+    .menu-item
+      -webkit-flex: 1
+      -moz-flex: 1
+      -ms-flex: 1
+      flex: 1
+      &:nth-child(1)
+        background: url(../images/menu-icon1.png) no-repeat center 0
+      &:nth-child(2)
+        background: url(../images/menu-icon2.png) no-repeat center 0
+      &:nth-child(3)
+        background: url(../images/menu-icon3.png) no-repeat center 0
+      &:hover
+        .txt
+          color: #bfa55d
+        &:nth-child(1)
+          background: url(../images/menu-hover-icon1.png) no-repeat center 0
+        &:nth-child(2)
+          background: url(../images/menu-hover-icon2.png) no-repeat center 0
+        &:nth-child(3)
+          background: url(../images/menu-hover-icon3.png) no-repeat center 0
+      &>.icon
+        display: block
+        height: 41px
+        background-size: 41px 41px
+      &>.txt
+        font-size: 24px
+        line-height: 40px
+        color: #000000
+        text-align: center
+

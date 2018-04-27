@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哇茶</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">
+    <script src="./js/v.js"></script>
+</head>
+<body>
+<section id="bindVip" class="bind-vip">
+    <form class="form">
+        <div class="header"></div>
+        <div class="group">
+            <label> 姓名</label>
+            <input type="text" value="" placeholder="请输入姓名">
+        </div>
+        <div class="group">
+            <label> 电话</label>
+            <input type="text" value="" placeholder="请输入电话" value="13343321456">
+        </div>
+        <div class="active">
+            <button class="cancel">取消</button>
+            <button class="sure">确定</button>
+        </div>
+        <div id="close" class="close"></div>
+    </form>
+    <div class="mask"></div>
+</section>
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/jquery.fullPage/jquery.fullPage.js"></script>
+<script>
+    $(function (){
+        $('#close').on('click', function (){
+            $('#bindVip').hide(0);
+        });
+    })
+</script>
+</body>
+</html>

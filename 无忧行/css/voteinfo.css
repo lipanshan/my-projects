@@ -1,0 +1,151 @@
+.vote-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.num-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 100%;
+  z-index: 10;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.center {
+  flex: 1;
+}
+.row .left a ,
+.row .right a,
+.center > a {
+  display: block;
+  width: 294px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 8px solid #f5d725;
+  overflow: hidden;
+}
+.row .center img {
+  display: block;
+  width: 294px;
+  height: 264px;
+  outline: none;
+  border: none;
+}
+.row h1 {
+  font-size: 38px;
+  line-height: 78px;
+  text-align: center;
+  color: #fff;
+}
+.row .left,
+.row .right {
+  flex: 0 0 188px;
+  width: 188px;
+  margin-top: 46px;
+}
+.row .left a ,
+.row .right a {
+  width: 188px;
+}
+.row .left img ,
+.row .right img {
+  display: block;
+  width: 188px;
+  height: 168px;
+}
+.row .left h2 ,
+.row .right h2 {
+  font-size: 28px;
+  line-height: 58px;
+  text-align: center;
+  color: #fff;
+}
+.txt {
+  margin-top: 31px;
+  position: relative;
+  height: 116px;
+}
+.txt-box {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.txt h2 {
+  font-size: 38px;
+  line-height: 58px;
+  color: #fff;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.btn-row1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 71px;
+}
+.btn-row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 181px;
+}
+.btn-row2 .left-btn,
+.btn-row2 .right-btn,
+.btn-row1 .vote-btn {
+  flex: 0 0 381px;
+  width: 381px;
+  font-size: 40px;
+  line-height: 70px;
+  border-radius: 49px;
+  background-color: #f5d725;
+  text-align: center;
+  color: #ff66aa;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-center .left,
+.flex-center .right {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.vote-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.vote-info .info-wrap {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+.vote-info .txt {
+  margin-top: 168px;
+}
+.vote-info .btn-row1 {
+  margin-top: 220px;
+}
+.radial-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../images/html_bg.png) no-repeat 0 -100px;
+  background-size: cover;
+}

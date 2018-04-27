@@ -1,0 +1,215 @@
+$color666: #666666
+$colorbfa: #bfa55d
+$colorfff: #ffffff
+$color333: #333333
+$colorcc3: #cc3636
+$colorf5f: #f5f5f5
+$coloreee: #eeeeee
+$color2e8: #2e83eb
+$color14b: #14b41f
+body
+  background-color: $colorf5f
+.order-detail
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 100px
+  left: 0
+  z-index: 10
+  overflow: hidden
+  .content
+    &>header
+      margin-top: 19px
+      .box
+        background: $colorfff
+        .row1,.row2
+          display: -webkit-flex
+          display: -moz-flex
+          display: -ms-flex
+          display: flex
+          padding-left: 30px
+          padding-right: 30px
+          justify-content: space-between
+          background-color: $colorfff
+          .time
+            -webkit-flex: 1
+            -moz-flex: 1
+            -ms-flex: 1
+            flex: 1
+            font-size: 28px
+            line-height: 74px
+            padding-top: 6px
+            border-bottom: 1px solid $coloreee
+            color: $color666
+          .status
+            position: relative
+            -webkit-flex: 1
+            -moz-flex: 1
+            -ms-flex: 1
+            flex: 1
+            font-size: 28px
+            line-height: 74px
+            padding-top: 6px
+            border-bottom: 1px solid $coloreee
+            text-align: right
+            .point
+              position: absolute
+              top: 21px
+              right: -14px
+              width: 16px
+              height: 16px
+              background: $colorcc3
+              -webkit-border-radius: 50%
+              -moz-border-radius: 50%
+              -ms-border-radius: 50%
+              border-radius: 50%
+        .row2
+          margin-top: 0
+          .time
+            -webkit-flex: 1
+            -moz-flex: 1
+            -ms-flex: 1
+            flex: 1
+            white-space: nowrap
+            border: none
+            .name
+              display: inline-block
+              vertical-align: top
+              max-width: 230px
+              font-size: 36px
+              line-height: 106px
+              color: $color333
+              font-weight: 600
+              overflow: hidden
+              white-space: nowrap
+              text-overflow: ellipsis
+            .address
+              display: inline-block
+              vertical-align: top
+              font-size: 36px
+              line-height: 106px
+              color: $color333
+              font-weight: 600
+          .price
+            -webkit-flex: 0 0 120px
+            -moz-flex: 0 0 120px
+            -ms-flex: 0 0 120px
+            flex: 0 0 120px
+            font-size: 36px
+            line-height: 106px
+            text-align: right
+            font-weight: 600
+            border: none
+            .money-icon
+              font-size: 20px
+      &.order-status1
+        .box
+          .row1
+            .status
+              color: $color2e8
+          .row2
+            .price
+              color: $colorcc3
+      &.order-status2
+        .box
+          .row1
+            .status
+              color: $color14b
+          .row2
+            .price
+              color: $colorcc3
+      &.order-status3
+        .box
+          .row1
+            .status
+              color: $color666
+  .qrcode-wrap
+    margin-top: 50px
+    padding-bottom: 41px
+    .img-wrap
+      margin: auto
+      position: relative
+      width: 400px
+      height: 400px
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
+      -ms-border-radius: 5px
+      border-radius: 5px
+
+      &>.icon
+        position: absolute
+        top: -39px
+        right: -58px
+        width: 135px
+        height: 136px
+        z-index: 10
+
+      &>.qrcode
+        position: absolute
+        top: 0
+        left: 0
+        width: 400px
+        height: 400px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        -ms-border-radius: 5px
+        border-radius: 5px
+        overflow: hidden
+    &>h2
+      margin-top: 21px
+    &>h2,&>p
+      font-size: 28px
+      line-height: 48px
+      text-align: center
+      color: $color333
+      &.time
+        margin-left: 20px
+  .order-info
+    padding-left: 30px
+    padding-right: 30px
+    padding-bottom: 11px
+    background-color: $colorfff
+    .title
+      padding-top: 3px
+      font-size: 28px
+      line-height: 72px
+      color: $color666
+    .wrap
+      padding-top: 19px
+      padding-bottom: 18px
+      border-top: 1px solid $coloreee
+      &>p
+        font-size: 28px
+        line-height: 48px
+        color: $color333
+        .price
+          color: $colorcc3
+          &.finish
+            color: $color333
+
+
+footer
+  position: absolute
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 10
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: flex
+  .left,.right, .center
+    -webkit-flex: 1
+    -moz-flex: 1
+    -ms-flex: 1
+    flex: 1
+    font-size: 34px
+    line-height: 100px
+    text-align: center
+  .left
+    color: $color333
+    border: 1px solid $coloreee
+    background: $colorfff
+  .right, .center
+    background: $colorbfa
+    color: $colorfff

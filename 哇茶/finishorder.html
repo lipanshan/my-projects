@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哇茶</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/orderdetail.css">
+    <link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">
+    <script src="./js/v.js"></script>
+</head>
+<body>
+<section id="orderDeatil" class="order-detail">
+    <div class="content">
+        <header class="order-status3">
+            <div class="box">
+                <div class="row1">
+                    <p class="time">2018-02-03&nbsp;&nbsp;12:30:45</p>
+                    <p class="status">已完成</p>
+                </div>
+                <div class="row2">
+                    <p class="time"><span class="name">哇茶会客厅</span><span class="address">（十里河店）</span></p>
+                    <p class="price"><span class="money-icon">￥</span><span class="money">1000</span></p>
+                </div>
+            </div>
+        </header>
+        <div class="qrcode-wrap">
+            <div class="img-wrap">
+                <img class="qrcode" src="./images/qrcode.png" alt="图片">
+                <img src="images/filish-order-icon.png" class="icon"/>
+            </div>
+            <h2>自动刷新：<span class="time">60</span>s</h2>
+            <p>请把二维码出示给工作人员</p>
+            <p>WOWTEA23432432432432423432434324</p>
+        </div>
+        <div class="order-info">
+            <h3 class="title">订单信息</h3>
+            <div class="wrap">
+                <p>预约人：茶小艺</p>
+                <p>电话：150038273384</p>
+            </div>
+            <div class="wrap">
+                <p>预约时间：2018.4.19 13:30-18:00</p>
+                <p>到店时间：2018.4.19 13:30</p>
+                <p>到店人数：8人</p>
+            </div>
+            <div class="wrap">
+                <p>权益抵扣：<span class="price finish"><span class="price-icon">￥</span>1000</span></p>
+                <p>备注：请体检把卫生打扫干净，多准备几把椅子，人数现在不太确定，确定好了之后我会提前通知你们。谢谢！</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+   <div class="center">返回首页</div>
+</footer>
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/jquery.fullPage/jquery.fullPage.js"></script>
+<script src="./js/bscroll.min.js"></script>
+<script>
+    var scroll = new BScroll($('#orderDeatil')[0], {
+        scrollY: true,
+        click: true
+    });
+</script>
+</body>
+</html>

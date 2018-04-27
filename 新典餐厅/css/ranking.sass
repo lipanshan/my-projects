@@ -1,0 +1,227 @@
+$color-theme: #ee6d1a
+$font-size-small-s: 14px
+$font-size-small-m: 22px
+$font-size-small-m-l: 26px
+$font-size-small: 28px
+$font-size-small-l: 30px
+$font-size-medium: 46px
+$font-size-large: 72px
+$color-text: #fff
+$color-border: #e5e5e5
+$color-text-d: #f36713
+$color-text-l: #000000
+$color-text-ll: rgba(255, 255, 255, 0.8)
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+  .border-bottom-line
+    &::after
+      -webkit-transform: scaleY(0.7)
+      -moz-transform: scaleY(0.7)
+      -ms-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+  .border-bottom-line
+    &::after
+      -webkit-transform: scaleY(0.5)
+      -moz-transform: scaleY(0.5)
+      -ms-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+.rank
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1
+  background: url(../images/bg1.png) no-repeat center center $color-theme
+  background-size: 100% 100%
+
+  &>header
+    margin: 47px 30px 0 30px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: flex
+    -webkit-justify-content: space-between
+    -moz-justify-content: space-between
+    -ms-justify-content: space-between
+    justify-content: space-between
+    .title
+      -webkit-flex: 1
+      -moz-flex: 1
+      -ms-flex: 1
+      flex: 1
+      &> h1
+        width: 271px
+        height: 138px
+        background: url(../images/ranking-txt.png) no-repeat 0 0
+        font-size: 0
+        overflow: hidden
+
+    .button-group
+      margin-top: 42px
+      padding-left: 24px
+      padding-right: 24px
+      border: 2px solid $color-text
+      -webkit-border-radius: 12px
+      -moz-border-radius: 12px
+      -ms-border-radius: 12px
+      border-radius: 12px
+      &>h2
+        margin-top: 27px
+        width: 183px
+        height: 47px
+        background: url(../images/button-txt.png) no-repeat 0 0
+        font-size: 0
+        overflow: hidden
+  .content
+    position: absolute
+    top: 243px
+    right: 30px
+    bottom: 19px
+    left: 30px
+    z-index: 1
+    background-color: $color-text
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    -ms-border-radius: 10px
+    border-radius: 10px
+    .head
+      position: relative
+      margin: 31px 30px 0 30px
+      padding-bottom: 38px
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: flex
+      -webkit-justify-content: space-between
+      -moz-justify-content: space-between
+      -ms-justify-content: space-between
+      justify-content: space-between
+      &::after
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        height: 0
+        border-bottom: 1px solid $color-border
+      & > .rank-title:nth-child(1)
+        -webkit-flex: 0 0 104px
+        -moz-flex: 0 0 104px
+        -ms-flex: 0 0 104px
+        flex: 0 0 104px
+        background: url(../images/ranking-list-txt1.png) no-repeat left center
+      & > .rank-title:nth-child(2)
+        -webkit-flex: 1
+        -moz-flex: 1
+        -ms-flex: 1
+        flex: 1
+        background: url(../images/ranking-list-txt2.png) no-repeat 66px center
+      & > .rank-title:nth-child(3)
+        -webkit-flex: 0 0 124px
+        -moz-flex: 0 0 124px
+        -ms-flex: 0 0 124px
+        flex: 0 0 124px
+        background: url(../images/ranking-list-txt3.png) no-repeat right center
+      .rank-title
+        font-size: 0
+        overflow: hidden
+        height: 56px
+    .list-container
+      position: absolute
+      top: 125px
+      right: 30px
+      bottom: 0
+      left: 30px
+      overflow: hidden
+
+      .item
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: flex
+        -webkit-justify-content: space-between
+        -moz-justify-content: space-between
+        -ms-justify-content: space-between
+        justify-content: space-between
+        padding: 30px 0
+        &.border-bottom-line
+          position: relative
+          &:after
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            display: block
+            width: 100%
+            height: 0
+            border-bottom: 1px solid $color-border
+        &:nth-child(1),&:nth-child(2),&:nth-child(3)
+          &>h2
+            color: $color-text-d
+        .name
+          -webkit-flex: 1
+          -moz-flex: 1
+          -ms-flex: 1
+          flex: 1
+          font-size: 0
+          white-space: nowrap
+          overflow: hidden
+          &>a
+            position: relative
+            display: inline-block
+            vertical-align: top
+            margin-left: 66px
+            width: 80px
+            height: 80px
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            -ms-border-radius: 50%
+            border-radius: 50%
+            overflow: hidden
+            background-color: $color-text-d
+            &>img
+              position: absolute
+              left: 0
+              top: 0
+              width: 80px
+              height: 80px
+          &>h2
+            margin-left: 22px
+            display: inline-block
+            vertical-align: top
+            font-size: $font-size-small-m-l
+            line-height: 72px
+            color: $color-text-l
+            white-space: nowrap
+            overflow: hidden
+        &>h2
+          -webkit-flex: 0 0 104px
+          -moz-flex: 0 0 104px
+          -ms-flex: 0 0 104px
+          flex: 0 0 104px
+          font-size: $font-size-small-l
+          line-height: 80px
+          text-align: center
+          color: $color-text-l
+        .time
+          -webkit-flex: 0 0 124px
+          -moz-flex: 0 0 124px
+          -ms-flex: 0 0 124px
+          flex: 0 0 124px
+          font-size: $font-size-small-m
+          line-height: 80px
+          text-align: center
+          color: $color-text-d
+
+
+
+
+
+
+
+
+
+
+

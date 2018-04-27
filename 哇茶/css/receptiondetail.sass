@@ -1,0 +1,278 @@
+$color666: #666666
+$colorbfa: #bfa55d
+$colorfff: #ffffff
+$color333: #333333
+$colorcc3: #cc3636
+$colorf5f: #f5f5f5
+$coloreee: #eeeeee
+.reception-room
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 100px
+  left: 0
+  z-index: 10
+  background-color: $colorf5f
+  overflow: hidden
+  .scroll-wrap
+    .cut-line
+      height: 20px
+    .section1
+      background-color: $colorfff
+      .slider-wrap
+        height: 500px
+        img
+          width: 100%
+          height: 100%
+        .swiper-pagination
+          bottom: 30px
+          .swiper-pagination-bullet
+            margin-right: 10px
+            vertical-align: middle
+            width: 24px
+            height: 2px
+            background: $colorbfa
+            opacity: 1
+            -webkit-border-radius: 0
+            -moz-border-radius: 0
+            -ms-border-radius: 0
+            border-radius: 0
+            &.swiper-pagination-bullet-active
+              background: none
+              width: 10px
+              height: 10px
+              border: 1px solid $colorbfa
+              -webkit-border-radius: 50%
+              -moz-border-radius: 50%
+              -ms-border-radius: 50%
+              border-radius: 50%
+      .introduce
+        padding: 21px 26px 13px
+        &>h1
+          font-size: 34px
+          line-height: 52px
+          color: $color333
+          text-indent: 4px
+        .subtitle
+          font-size: 28px
+          line-height: 46px
+          color: $color666
+        .price
+          font-size: 28px
+          line-height: 40px
+          color: $colorcc3
+          .price-icon
+            font-size: 20px
+          .num
+            font-weight: 600
+    .section2
+      background-color: $colorfff
+      .title
+        height: 74px
+        background: url(../images/section2.png) no-repeat right 0
+        background-size: 100% 74px
+      .teacher-list
+        margin-top: 28px
+        padding-left: 18px
+        padding-right: 18px
+        width: 100%
+        overflow: hidden
+        font-size: 0
+        &>ul
+          display: inline-block
+          font-size: 0
+          white-space: nowrap
+        .item
+          margin: 0 10px
+          padding-bottom: 23px
+          display: inline-block
+          vertical-align: top
+          width: 219px
+          &>a
+            margin: 0 auto
+            position: relative
+            display: block
+            width: 169px
+            padding-bottom: 100%
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            -ms-border-radius: 50%
+            border-radius: 50%
+            overflow: hidden
+            &>img
+              position: absolute
+              left: 0
+              top: 0
+              width: 169px
+              height: 169px
+              -webkit-border-radius: 50%
+              -moz-border-radius: 50%
+              -ms-border-radius: 50%
+              border-radius: 50%
+          &>h2
+            margin-top: 10px
+            font-size: 32px
+            line-height: 52px
+            text-align: center
+            color: $color333
+            white-space: nowrap
+            overflow: hidden
+          &>p
+            font-size: 27px
+            line-height: 41px
+            color: $color666
+            text-align: center
+            white-space: nowrap
+            overflow: hidden
+    .section3
+      padding: 29px 30px 21px
+      background: $colorfff
+      .title
+        margin: auto
+        width: 364px
+        height: 45px
+        background: url(../images/section3.png) no-repeat 0 0
+        background-size: 364px 45px
+      .map-wrap
+        position: relative
+        margin: 29px auto 0
+        width: 689px
+        height: 256px
+        &>img
+          width: 689px
+          height: 256px
+      .info-list
+        margin-top: 21px
+        .item
+          font-size: 0
+          white-space: nowrap
+          overflow: hidden
+          .item-icon
+            margin-right: 20px
+            display: inline-block
+            vertical-align: middle
+            width: 12px
+            height: 12px
+            border: 1px solid $colorbfa
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            border-radius: 50%
+          &>p
+            display: inline-block
+            vertical-align: middle
+            font-size: 28px
+            line-height: 46px
+            color: $color333
+            font-weight: 400
+            overflow: hidden
+            white-space: nowrap
+    .section4
+      padding-top: 29px
+      background: url(../images/bottom-right-bg.png) no-repeat right bottom $colorfff
+      background-size: 155px 58px
+      .title
+        margin: 0 auto
+        width: 402px
+        height: 45px
+        background: url(../images/section4.png) no-repeat 0 0
+        background-size: 402px 45px
+      .describe-list
+        padding: 10px 30px 24px
+        .item-box
+          .list
+            padding-top: 20px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: flex
+            -webkit-justify-content: space-between
+            -moz-justify-content: space-between
+            -ms-justify-content: space-between
+            justify-content: space-between
+            .item
+              -webkit-flex: 1
+              -moz-flex: 1
+              -ms-flex: 1
+              flex: 1
+              margin-right: 19px
+              -webit-border-radius: 4px
+              -moz-border-radius: 4px
+              -ms-border-radius: 4px
+              border-radius: 4px
+              &>img
+                -webit-border-radius: 4px
+                -moz-border-radius: 4px
+                -ms-border-radius: 4px
+                border-radius: 4px
+          &>p
+            margin-top: 20px
+            font-size: 28px
+            line-height: 48px
+            color: $color666
+
+
+
+.button-group
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: flex
+  position: absolute
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  .left
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: flex
+    -webkit-justify-content: space-between
+    -moz-justify-content: space-between
+    -ms-justify-content: space-between
+    justify-content: space-between
+    -webkit-flex: 0 0 240px
+    -moz-flex: 0 0 240px
+    -ms-flex: 0 0 240px
+    flex: 0 0 240px
+    width: 240px
+    border: 1px solid $coloreee
+    background: $colorfff
+    .box
+      -webkit-flex: 1
+      -moz-flex: 1
+      -ms-flex: 1
+      flex: 1
+      &:nth-child(1)
+        &>.icon
+          background: url(../images/share-icon.png) no-repeat 0 0
+          background-size: 40px 41px
+      &:nth-child(2)
+        &>.icon
+          background: url(../images/like-icon.png) no-repeat 0 0
+          background-size: 40px 41px
+      &>.icon
+        margin: 15px auto 0
+        display: block
+        width: 40px
+        height: 40px
+      &>.txt
+        font-size: 24px
+        line-height: 42px
+        padding-bottom: 3px
+        color: $color666
+        text-align: center
+  .right
+    -webkit-flex: 1
+    -moz-flex: 1
+    -ms-flex: 1
+    flex: 1
+    font-size: 34px
+    line-height: 100px
+    color: $colorfff
+    font-weight: 600
+    text-align: center
+    background-color: $colorbfa
+
+
+

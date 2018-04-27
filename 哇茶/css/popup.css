@@ -1,0 +1,144 @@
+.bind-vip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10; }
+  .bind-vip .mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    filter: alpha(opacify=60);
+    z-index: -1; }
+  .bind-vip .form {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    left: 60px;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+    background-color: #ffffff; }
+    .bind-vip .form .header {
+      margin: 50px auto 23px;
+      width: 395px;
+      height: 45px;
+      background: url(../images/popup-header.png) no-repeat 0 0;
+      background-size: 395px 45px; }
+    .bind-vip .form .group {
+      margin-top: 30px;
+      padding-right: 45px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: flex; }
+      .bind-vip .form .group > label {
+        margin-right: 20px;
+        display: block;
+        -webkit-flex: 0 0 103px;
+        -moz-flex: 0 0 103px;
+        -ms-flex: 0 0 103px;
+        flex: 0 0 103px;
+        width: 103px;
+        text-align: right;
+        font-size: 30px;
+        line-height: 78px;
+        color: #333333; }
+      .bind-vip .form .group > input {
+        display: block;
+        padding: 0 20px;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        border: 1px solid #dddddd;
+        font-size: 30px;
+        line-height: 76px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        color: #333333; }
+    .bind-vip .form .danger-icon {
+      margin: 73px auto 0;
+      width: 134px;
+      height: 113px;
+      background: url(../images/danger.png) no-repeat 0 0;
+      background-size: 134px 113px; }
+    .bind-vip .form .tips {
+      margin: 29px auto 0;
+      width: 362px;
+      font-size: 30px;
+      line-height: 48px;
+      color: #333333;
+      text-align: center;
+      word-break: break-all; }
+      .bind-vip .form .tips.paddingb22 {
+        padding-bottom: 22px; }
+    .bind-vip .form .active {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      padding: 50px 35px;
+      font-size: 0;
+      white-space: nowrap; }
+      .bind-vip .form .active .cancel, .bind-vip .form .active .sure {
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        font-size: 34px;
+        line-height: 90px;
+        text-align: center;
+        color: #ffffff; }
+      .bind-vip .form .active .cancel {
+        background-color: #bbbbbb; }
+      .bind-vip .form .active .sure {
+        background-color: #bfa55d; }
+    .bind-vip .form .close {
+      position: absolute;
+      bottom: -116px;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, 0, 0);
+      -moz-transform: translate3d(-50%, 0, 0);
+      -ms-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+      width: 82px;
+      height: 82px;
+      background: url(../images/close-icon.png) no-repeat 0 0;
+      background-size: 82px 82px; }
+  .bind-vip .wrap {
+    position: absolute;
+    top: 62px;
+    right: 64px; }
+    .bind-vip .wrap .icon {
+      width: 194px;
+      height: 158px;
+      background: url(../images/arrow.png) no-repeat 0 0;
+      background-size: 194px 158px; }
+  .bind-vip .txt {
+    margin-top: 315px;
+    font-size: 38px;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 800; }
+
+/*# sourceMappingURL=popup.css.map */

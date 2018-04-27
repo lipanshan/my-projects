@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无忧行</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">
+    <script src="./js/v.js"></script>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section" id="page1">
+
+        <div class="happy-title">
+            <img src="images/page1_happytitle.png" alt="">
+            <p class="happy-buy">HAPPY购物之旅</p>
+            <div class="happy-btn">
+                <p class="comein">女皇请进</p>
+                <i class="icon-purplearrow"></i>
+            </div>
+        </div>
+
+        <div class="go">
+            <p class="go-title1">带你看世界</p>
+            <p class="go-title2">香港亲子之旅</p>
+            <div class="all-go">
+                <p class="all-gotext">全家GO</p>
+                <i class="icon-yellowarrow"></i>
+            </div>
+        </div>
+
+        <div class="page1-foot">
+            <p class="discounts">特惠</p>
+            <i class="icon-whitearrow"></i>
+        </div>
+    </div>
+
+
+    <div class="section" id="page2">
+        <div class="top-text">
+            <p class="discounts">参加活动</p>
+            <i class="icon-return"></i>
+        </div>
+
+        <div class="page2-list">
+            <div class="list-item-left">
+                <div class="img-box">
+                    <img src="./images/hk1.png" alt="">
+                </div>
+                <div class="text-box">
+                    <p class="text1">香港方向流量包</p>
+                    <p class="text2">大包多天低至：</p>
+                    <p class="text3">￥6.5 <span>/天</span></p>
+                    <div class="page2-btn">
+                        <p>优惠购买</p>
+                        <i class="pink-arrow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-item-right">
+                <div class="img-box">
+                    <img src="./images/hk2.png" alt="">
+                </div>
+                <div class="text-box">
+                    <p>香格里拉酒店集团的酒店遍</p>
+                    <p>布亚太、北美、中东及欧洲</p>
+                    <p>地区，在全球各地您都能感</p>
+                    <p>受到我们至善真诚待客之道</p>
+                    <div class="page2-btn">
+                        <p>预定酒店</p>
+                        <i class="pink-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" id="page3">
+        <div class="top-text">
+            <p class="discounts">参加活动</p>
+            <i class="icon-return"></i>
+        </div>
+
+        <div class="page2-list">
+            <div class="list-item-left">
+                <div class="img-box">
+                    <img src="./images/hk1.png" alt="">
+                </div>
+                <div class="text-box">
+                    <p class="text1">香港方向流量包</p>
+                    <p class="text2">大包多天低至：</p>
+                    <p class="text3">￥6.5 <span>/天</span></p>
+                    <div class="page2-btn">
+                        <p>优惠购买</p>
+                        <i class="pink-arrow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list-item-right">
+                <div class="img-box">
+                    <img src="./images/hk2.png" alt="">
+                </div>
+                <div class="text-box">
+                    <p>香格里拉酒店集团的酒店遍</p>
+                    <p>布亚太、北美、中东及欧洲</p>
+                    <p>地区，在全球各地您都能感</p>
+                    <p>受到我们至善真诚待客之道</p>
+                    <div class="page2-btn">
+                        <p>预定酒店</p>
+                        <i class="pink-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/jquery.fullPage/jquery.fullPage.js"></script>
+<script>
+    $(function () {
+
+        $('#fullpage').fullpage();
+
+        var page1Height = $("#page1").height()
+        console.log(page1Height);
+        if(page1Height > 1334){
+            $("#page1").css({
+                "background":"url(./images/ipxbg.png) no-repeat",
+                "background-size":" 100% 100%"
+            })
+        }
+    })
+</script>
+</html>

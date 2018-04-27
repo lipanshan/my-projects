@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无忧行</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/vote.css">
+    <link rel="stylesheet" href="./css/share.css">
+    <link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">
+    <script src="./js/v.js"></script>
+    <script src="./js/clipboard.min.js"></script>
+</head>
+<body>
+    <section class="share-wrap">
+        <div class="bubble">
+            <a id="copy" href="javascript:;" data-clipboard-action="copy" data-clipboard-target="#copy">http://www.icofont.cn/home/indem=a313x.7781069.1998910419.781069.1998912</a>
+            <p class="txt">长按复制链接去分享吧</p>
+        </div>
+        <div class="mask"></div>
+    </section>
+    <script>
+        var clipboard = new Clipboard('#copy');
+        clipboard.on('success', function(e) {
+
+        });
+        clipboard.on('error', function(e) {
+            alert("当前浏览器不支持此功能，请手动复制。");
+        });
+    </script>
+</body>
+</html>

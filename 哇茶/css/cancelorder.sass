@@ -1,0 +1,252 @@
+.cancel-order
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 100px
+  left: 0
+  z-index: 10
+  background-color: #f5f5f5
+  overflow: auto
+  &>.top-content
+    position: absolute
+    top: 20px
+    right: 0
+    bottom: 100px
+    left: 0
+    .list-wrap
+      margin-top: 20px
+    .remark
+      margin-top: 12px
+      padding-left: 30px
+      font-size: 27px
+      line-height: 65px
+      color: #666666
+    .row1,.row2
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: flex
+      padding-left: 30px
+      padding-right: 30px
+      justify-content: space-between
+      background-color: #ffffff
+      .time
+        -webkit-flex: 1
+        -moz-flex: 1
+        -ms-flex: 1
+        flex: 1
+        font-size: 26px
+        line-height: 76px
+        padding-top: 4px
+        height: 80px
+        outline: none
+        border-bottom: 1px solid #eeeeee
+        color: #666666
+      .status
+        -webkit-flex: 1
+        -moz-flex: 1
+        -ms-flex: 1
+        flex: 1
+        font-size: 26px
+        line-height: 76px
+        height: 80px
+        padding-top: 4px
+        border-bottom: 1px solid #eeeeee
+        color: #14b41f
+        text-align: right
+        outline: none
+    .row2
+      margin-top: 0
+      .name
+        -webkit-flex: 1
+        -moz-flex: 1
+        -ms-flex: 1
+        flex: 1
+        font-size: 26px
+        line-height: 106px
+        height: 106px
+        outline: none
+        color: #333333
+      .price
+        -webkit-flex: 1
+        -moz-flex: 1
+        -ms-flex: 1
+        flex: 1
+        font-size: 26px
+        line-height: 106px
+        color: #cc3636
+        text-align: right
+        font-weight: 600
+        .money-icon
+          font-size: 20px
+    .textarea-wrap
+      margin: 40px 30px 0 30px
+      border-radius: 5px
+      background-color: #ffffff
+      &>textarea
+        display: block
+        padding: 30px 20px
+        width: 100%
+        font-size: 28px
+        line-height: 34px
+        color: #333333
+        height: 306px
+        overflow: auto
+        resize: none
+    .textarea-wrap2
+      margin-top: 0
+      height: 180px
+      &>textarea
+        height: 180px
+        resize: none
+    .cancel-describe
+      margin: 27px 30px 0
+      &>h2
+        font-size: 26px
+        line-height: 48px
+        color: #666666
+      &>div
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: flex
+        .order-num
+          -webkit-flex: 0 0 34px
+          -moz-flex: 0 0 34px
+          -ms-flex: 0 0 34px
+          flex: 0 0 34px
+          width: 34px
+          padding-right: 12px
+          font-size: 26px
+          line-height: 48px
+          color: #666666
+        .txt
+          -webkit-flex: 1
+          -moz-flex: 1
+          -ms-flex: 1
+          flex: 1
+          font-size: 26px
+          line-height: 48px
+          color: #666666
+          word-break: break-all
+    .list
+      padding: 0 30px
+      background-color: #ffffff
+      .item
+        -webkit-display: flex
+        -moz-display: flex
+        -ms-display: flex
+        display: flex
+        border-bottom: 1px solid #eeeeee
+        &:last-child
+          border: none
+        &>label
+          display: block
+          -webkit-flex: 0 0 160px
+          -ms-flex: 0 0 160px
+          -moz-flex: 0 0 160px
+          flex: 0 0 160px
+          width: 160px
+          font-size: 30px
+          line-height: 129px
+          color: #666666
+        &>input
+          -webkit-flex: 1
+          -moz-flex: 1
+          -ms-flex: 1
+          flex: 1
+          font-size: 30px
+          line-height: 39px
+          padding-top: 40px
+          padding-bottom: 40px
+          height: 129px
+          border: none
+          background: none
+          text-align: right
+          outline: none
+    .action
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 10
+      &>input
+        display: block
+        width: 100%
+        font-size: 34px
+        line-height: 100px
+        height: 100px
+        text-align: center
+        color: #fff
+        outline: none
+        background-color: #bfa55d
+.button-group
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 10
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: flex
+  .left
+    -webkit-flex: 0 0 236px
+    -moz-flex: 0 0 236px
+    -ms-flex: 0 0 236px
+    flex: 0 0 236px
+    width: 236px
+    background-color: #ffffff
+    border: 1px solid #eeeeee
+    font-size: 0
+    white-space: nowrap
+    &>span:nth-child(1)
+      display: inline-block
+      vertical-align: top
+      padding-left: 25px
+      margin-top: 7px
+      font-size: 27px
+      line-height: 92px
+      color: #333333
+    &>span:nth-child(2)
+      display: inline-block
+      vertical-align: top
+      margin-left: 18px
+      margin-top: 11px
+      font-size: 20px
+      line-height: 87px
+      color: #cc3636
+    &>span:nth-child(3)
+      display: inline-block
+      vertical-align: top
+      font-size: 34px
+      line-height: 98px
+      color: #cc3636
+      font-weight: 500
+  .right
+    -webkit-flex: 1
+    -moz-flex: 1
+    -ms-flex: 1
+    flex: 1
+    background-color: #bfa55d
+    color: #ffffff
+    font-size: 34px
+    text-align: center
+    line-height: 100px
+    font-weight: 400
+  .action
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 10
+    &>input
+      display: block
+      width: 100%
+      font-size: 34px
+      line-height: 100px
+      height: 100px
+      text-align: center
+      color: #fff
+      outline: none
+      background-color: #bfa55d
