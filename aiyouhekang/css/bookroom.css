@@ -1,0 +1,199 @@
+body {
+    background-color: #f5f5f5;
+}
+.list {
+    padding: 0 15px;
+    background-color: #ffffff;
+}
+
+.list .item {
+    display: -webkit-flex;
+    display:  -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.list .item:last-child {
+    border: none;
+}
+
+.item > label {
+    display: block;
+    -webkit-flex: 0 0 90px;
+    -ms-flex: 0 0 90px;
+    -moz-flex: 0 0 90px;
+    flex: 0 0 90px;
+    width: 90px;
+    font-size: 15px;
+    line-height: 50px;
+    color: #666666;
+}
+
+.list .item > input {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 15;
+    line-height: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    text-align: right;
+    outline: none;
+}
+.book-info-title {
+    color: #666;
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.book-room-info {
+    position: relative;
+    height: 74px;
+    background-color: #fff;
+    padding: 0 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+.book-room-info .room-name {
+    padding-top: 15px;
+    font-size: 16px;
+}
+.book-room-info .room-size {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #666;
+}
+.book-room-info .room-money {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    color: #cc3636;
+    font-size: 18px;
+    font-weight: 700;
+}
+.remark {
+    max-height: 999999px;
+    font-size: 13px;
+    padding: 0 15px;
+    background-color: #fff;
+}
+.remark-text {
+    padding: 10px 0;
+}
+.vip-deduction {
+    font-size: 15px;
+    color: #cc3636;
+    font-weight: 700;
+}
+.vdeduction-info {
+    font-size: 14px;
+    padding: 15px;
+    line-height:1;
+    margin-bottom: 50px;
+}
+.vdeduction-info .icon-success {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/success.png") no-repeat;
+    background-size: 14px 14px;
+}
+.col2y {
+    color: #bfa55d;
+}
+
+.book-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #bfa55d;
+}
+.right {
+    margin-top: 20px;
+    margin-left: 10px;
+    -webkit-flex: 0 0 7px;
+    -moz-flex: 0 0 7px;
+    -ms-flex: 0 0 7px;
+    flex: 0 0 7px;
+    width: 7px;
+    height: 13px;
+    background: url(../images/arrow-right.png) no-repeat 0 0;
+    background-size: 7px 13px; }
+
+.select-gender {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+.gender-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+.gender-head {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    height: 39px;
+    line-height: 39px;
+    margin: 0 auto;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.gender-body {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 92%;
+    height: 261px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gender-swiper {
+    width: 100%;
+    height: 100%;
+}
+.gender-swiper .swiper-slide {
+    text-align: center;
+    background: #fff;
+    color: #999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 32px;
+    opacity: 1;
+    color: #666;
+}
+.gender-swiper .swiper-slide-active {
+    color: #000;
+    font-size: 20px;
+}

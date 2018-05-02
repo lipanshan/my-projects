@@ -1,0 +1,155 @@
+@media all and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .border-top-1px:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5); } }
+@media all and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border-top-1px:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    -ms-transform: scaleY(0.7);
+    transform: scaleY(0.7); } }
+.register-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: #f5f5f5; }
+  .register-info .wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 49px;
+    left: 0;
+    z-index: 10;
+    overflow: hidden; }
+    .register-info .wrap .content {
+      padding-bottom: 10px; }
+      .register-info .wrap .content > h1 {
+        position: relative;
+        font-size: 14px;
+        line-height: 44px;
+        color: #000000;
+        padding-left: 20px;
+        background: #ffffff; }
+        .register-info .wrap .content > h1:after {
+          border-top: 1px solid #dbdbdb; }
+      .register-info .wrap .content > h2 {
+        position: relative;
+        font-size: 14px;
+        line-height: 42px;
+        padding-top: 2px;
+        padding-left: 20px;
+        color: #5e5e5e; }
+        .register-info .wrap .content > h2:after {
+          border-top: 1px solid #dbdbdb; }
+      .register-info .wrap .content .info-list {
+        padding-left: 15px;
+        padding-right: 15px;
+        background: #ffffff; }
+        .register-info .wrap .content .info-list .row {
+          position: relative;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+          -moz-justify-content: space-between;
+          -ms-justify-content: space-between;
+          -o-justify-content: space-between;
+          justify-content: space-between; }
+          .register-info .wrap .content .info-list .row:nth-child(1):after {
+            border: none; }
+          .register-info .wrap .content .info-list .row:after {
+            border-top: 1px solid #dbdbdb; }
+          .register-info .wrap .content .info-list .row > .right {
+            margin-top: 15px;
+            margin-left: 20px;
+            -webkit-flex: 0 0 14px;
+            -moz-flex: 0 0 14px;
+            -ms-flex: 0 0 14px;
+            flex: 0 0 14px;
+            width: 14px;
+            height: 26px;
+            background: url(../image/arrow-right.png) no-repeat 0 0;
+            background-size: 7px 13px; }
+          .register-info .wrap .content .info-list .row .title {
+            -webkit-flex: 0 0 80px;
+            -moz-flex: 0 0 80px;
+            -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+            font-size: 13px;
+            line-height: 43px;
+            color: #9b9b9b; }
+          .register-info .wrap .content .info-list .row .form-control {
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            outline: none;
+            border: none;
+            font-size: 13px;
+            line-height: 43px;
+            height: 43px;
+            color: #000000;
+            text-align: right; }
+          .register-info .wrap .content .info-list .row select {
+            display: block;
+            border: none; }
+  .register-info .submit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    font-size: 13px;
+    line-height: 49px;
+    color: #ffffff;
+    background: #bc1836;
+    text-align: center; }
+
+.datepicker-modal, .select-gender {
+  z-index: 200; }
+
+.datepicker-date, .datepicker-hour {
+  overflow: hidden; }
+
+.datepicker-modal .datepicker-head, .active-line, .datepicker-date-item {
+  font-size: 16px !important; }
+
+.datepicker-body .active-line,
+.gender-body .active-line {
+  margin-top: -25px;
+  height: 50px; }
+
+.datepicker-container .datepicker-body {
+  height: 261px; }
+
+.datepicker-modal .datepicker-container {
+  height: 300px; }
+
+.swiper-wrapper .swiper-slide .gender-text {
+  font-size: 16px; }
+
+/*# sourceMappingURL=registerinfo.css.map */

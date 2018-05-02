@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>爱佑和康</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/courseassess.css">
+</head>
+<body>
+<section class="course-assess">
+    <div id="wrapper" class="wrap">
+        <div class="content">
+            <header>
+                <div class="img-wrap">
+                    <a href="javascript:;" class="img">
+                        <img src="./image/course-header.png" alt="图片"/>
+                    </a>
+                </div>
+                <div class="txt-wrap">
+                    <p class="title">欢迎来到残酷的世界，懂你的人都在这！</p>
+                    <p class="time"><i class="icon"></i>9月28日 12:00-14:00</p>
+                    <p class="address"><i class="icon"></i>北京朝阳</p>
+                </div>
+            </header>
+            <div id="container" class="container">
+                <nav id="menu" class="head-title">
+                    <a href="javascript:;" class="item active"><h2>课程评价</h2></a>
+                    <a href="javascript:;" class="item"><h2>课程作业</h2></a>
+                </nav>
+                <ul id="boxWrap" class="box border-top-1px">
+                    <li class="item-box">
+                        <ul class="star-list">
+                            <li class="star-item border-top-1px">
+                                <p class="title">内容评价</p>
+                                <div class="star-wrap">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li class="star-item border-top-1px">
+                                <p class="title">授课水平</p>
+                                <div class="star-wrap">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li class="star-item border-top-1px">
+                                <p class="title">场地及设施安排</p>
+                                <div class="star-wrap">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li class="star-item border-top-1px">
+                                <p class="title">培训的进程安排</p>
+                                <div class="star-wrap">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li class="star-item border-top-1px">
+                                <p class="title">日后工作的帮助</p>
+                                <div class="star-wrap">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                            <li class="star-item border-top-1px">
+                                <p class="title">总体评价</p>
+                                <div class="star-wrap">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h3>对您最有帮助：</h3>
+                        <div class="textarea-wrap">
+                            <textarea name="" placeholder="请输入您要评价的信息"></textarea>
+                        </div>
+                        <h3>意见/建议：</h3>
+                        <div class="textarea-wrap">
+                            <textarea name="" placeholder="请输入您要评价的信息"></textarea>
+                        </div>
+                    </li>
+                    <li class="item-box">
+                        <div class="left">
+                            <h3>学习心得</h3>
+                            <div class="icon">
+                                <i></i>
+                                <p class="txt">上传图片</p>
+                                <input type="file">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h3>分享截图</h3>
+                            <div class="icon">
+                                <i></i>
+                                <p class="txt">上传文件</p>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="submit">保存</div>
+</section>
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/bscroll.min.js"></script>
+<script>
+    $(function () {
+        var meunScroll1 = new BScroll($('#wrapper')[0], {
+            click: true,
+            scrollY: true
+        });
+        $('#container').on('click','.star', function (){
+            var startList = $(this).parents('.star-wrap').find('.star');
+            var currentIndex = startList.index($(this));
+            var len = startList.size();
+            while (len >= 0) {
+                if (len <= currentIndex) {
+                    startList.eq(len).addClass('active');
+                } else {
+                    startList.eq(len).removeClass('active');
+                }
+                len--;
+            }
+        });
+        $('#menu').on('click', '.item', function (){
+           var currentIndex =  $('#menu').find('.item').index($(this));
+            $('#boxWrap').find('.item-box').eq(currentIndex).show(0).siblings('.item-box').hide(0);
+            $(this).addClass('active').siblings('.item').removeClass('active');
+        });
+    })
+</script>
+</body>
+</html>

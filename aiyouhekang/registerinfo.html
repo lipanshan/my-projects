@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>爱佑和康</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+    <link rel="stylesheet" href="./css/bookroom.css">
+    <!--<link rel="stylesheet" href="./js/jquery.fullPage/jquery.fullPage.css">-->
+    <link rel="stylesheet" href="./css/registerinfo.css">
+</head>
+<body>
+<form class="register-info">
+    <div id="wrapper" class="wrap">
+        <div class="content">
+            <h1 class="border-top-1px">注册信息</h1>
+            <h2 class="border-top-1px">个人</h2>
+            <div class="info-list">
+                <div class="row border-top-1px">
+                    <label class="title">姓名</label>
+                    <input type="text" placeholder="请输入您的真实姓名" class="form-control">
+                </div>
+                <div class="row border-top-1px"  id="show-gender">
+                    <label class="title">性别</label>
+                    <input type="text"  class="disablekey form-control">
+                    <i class="right"></i>
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">出生日期</label>
+                    <input type="text" placeholder="" class="form-control disablekey datapicker">
+                    <i class="right"></i>
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">身份证</label>
+                    <input type="text" placeholder="请输入您的身份证号" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">联系电话</label>
+                    <input type="tel" placeholder="请输入您的电话号码" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">学历</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">毕业院校</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">专业</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">邮箱</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">从业年限</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <h2 class="border-top-1px">单位</h2>
+            <div class="info-list">
+                <div class="row border-top-1px">
+                    <label class="title">工作单位</label>
+                    <input type="text" placeholder="请输入您的单位名称" class="form-control">
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">单位所在地</label>
+                    <select class="form-control" id="">
+                        <option value="">北京</option>
+                    </select>
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">单位类型</label>
+                    <select placeholder="请选择" class="form-control">
+                        <option value="">北京</option>
+                    </select>
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">单位规模</label>
+                    <select placeholder="请选择" class="form-control">
+                        <option value="">北京</option>
+                    </select>
+                </div>
+                <div class="row border-top-1px">
+                    <label class="title">职务</label>
+                    <input type="tel" placeholder="" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="submit">保存</div>
+</form>
+<div class="datepicker-modal">
+    <div class="datepicker-container">
+        <div class="datepicker-head">
+            <div class="datepicker-cancel">取消</div>
+            <div class="datepicker-true">确认</div>
+        </div>
+        <div class="datepicker-body">
+            <div class="active-line"></div>
+
+            <div class="datepicker-date">
+                <div class="swiper-container datepicker-date-container">
+                    <div class="swiper-wrapper">
+
+                    </div>
+                </div>
+            </div>
+            <div class="datepicker-hour">
+                <div class="swiper-container datepicker-hour-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="datepicker-date-item">9:00-10:00</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="datepicker-date-item">10:00-11:00</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="datepicker-date-item">11:00-12:00</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="datepicker-date-item">12:00-13:00</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="datepicker-date-item">13:00-14:00</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="datepicker-date-item">14:00-15:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="select-gender">
+    <div class="gender-container">
+        <div class="gender-head">
+            <div class="gender-cancel">取消</div>
+            <div class="gender-true">确认</div>
+        </div>
+        <div class="gender-body">
+            <div class="active-line"></div>
+            <div class="swiper-container gender-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gender-text">男</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gender-text">女</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/jquery.min.2.1.1/jquery.min.2.1.1.js"></script>
+<script src="./js/swiper-4.2.2/js/swiper.min.js"></script>
+<script src="./js/datepicker.js"></script>
+<script src="./js/bscroll.min.js"></script>
+<script src="./js/datatime.js"></script>
+
+<script>
+    $(function (){
+        var meunScroll1 = new BScroll($('#wrapper')[0], {
+            click: true,
+            scrollY: true
+        });
+    })
+</script>
+</body>
+</html>

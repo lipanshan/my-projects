@@ -1,0 +1,82 @@
+$colorf5f: #f5f5f5
+$colorbc1: #bc1836
+$colorfff: #ffffff
+$color000: #000000
+$colordbd: #dbdbdb
+$color5e5: #5e5e5e
+$color9b9: #9b9b9b
+$colorbc1: #bc1836
+$color4d4: #4d4d4d
+$colorb7b: #b7b7b7
+$colorfaf: #faf5e6
+$colora6a: #a6a8ab
+$color636: #636363
+$colorbbb: #bbbbbb
+@mixin border-top1 ($color)
+  border-top: 1px solid $color
+@media all and (-webkit-min-device-pixel-ratio: 2.0), (min-device-pixel-ratio: 2.0)
+  .border-top-1px
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      width: 100%
+      z-index: 20
+      -webkit-transform: scaleY(0.5)
+      -moz-transform: scaleY(0.5)
+      -ms-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+@media all and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)
+  .border-top-1px
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      width: 100%
+      z-index: 20
+      -webkit-transform: scaleY(0.7)
+      -moz-transform: scaleY(0.7)
+      -ms-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+.success-wrap
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 49px
+  left: 0
+  z-index: 10
+  background: $colorfff
+  &>.icon
+    margin: 118px auto 0
+    width: 79px
+    height: 71px
+    background: url(../image/success.png) no-repeat 0 0
+    background-size: 79px 71px
+  &>h1
+    margin-top: 32px
+    font-size: 17px
+    line-height: 25px
+    text-align: center
+    font-weight: 600
+    color: $colorbc1
+  .title
+    font-size: 14px
+    line-height: 22px
+    text-align: center
+    color: $colorbbb
+
+.back
+  position: absolute
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 20
+  font-size: 13px
+  line-height: 49px
+  color: $colorfff
+  background: $colorbc1
+  text-align: center
